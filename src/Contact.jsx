@@ -21,20 +21,20 @@ const Contact = () => {
                         </p>
 
                         <div className="space-y-4 mb-8">
-                            <a href="mailto:praveenmanickam823@gmail.com" className="flex items-center space-x-3 text-xl hover:text-primary transition-colors">
+                            <a href="mailto:praveenmanickam823@gmail.com" aria-label="Email Me" className="flex items-center space-x-3 text-xl hover:text-primary transition-colors">
                                 <FaEnvelope />
                                 <span>praveenmanickam823@gmail.com</span>
                             </a>
-                            <button onClick={handleWhatsApp} className="flex items-center space-x-3 text-xl hover:text-green-500 transition-colors">
+                            <button onClick={handleWhatsApp} aria-label="Chat on WhatsApp" className="flex items-center space-x-3 text-xl hover:text-green-500 transition-colors">
                                 <FaWhatsapp />
                                 <span>+91 93457 56552</span>
                             </button>
                         </div>
 
                         <div className="flex space-x-4">
-                            <a href="https://www.linkedin.com/in/praveen-m-658b1a289" target="_blank" className="p-3 bg-dark-700 rounded-full hover:bg-primary transition-colors"><FaLinkedin size={20} /></a>
-                            <a href="https://github.com/praveen24032003" target="_blank" className="p-3 bg-dark-700 rounded-full hover:bg-white hover:text-black transition-colors"><FaGithub size={20} /></a>
-                            <a href="https://www.instagram.com/praveen.ceo_/" target="_blank" className="p-3 bg-dark-700 rounded-full hover:bg-pink-600 transition-colors"><FaInstagram size={20} /></a>
+                            <a href="https://www.linkedin.com/in/praveen-m-658b1a289" target="_blank" aria-label="LinkedIn" className="p-3 bg-dark-700 rounded-full hover:bg-primary transition-colors"><FaLinkedin size={20} /></a>
+                            <a href="https://github.com/praveen24032003" target="_blank" aria-label="GitHub" className="p-3 bg-dark-700 rounded-full hover:bg-white hover:text-black transition-colors"><FaGithub size={20} /></a>
+                            <a href="https://www.instagram.com/praveen.ceo_/" target="_blank" aria-label="Instagram" className="p-3 bg-dark-700 rounded-full hover:bg-pink-600 transition-colors"><FaInstagram size={20} /></a>
                         </div>
                     </div>
 

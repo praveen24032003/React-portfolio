@@ -25,11 +25,11 @@ const Navbar = () => {
     ];
 
     return (
-        <nav
+        <header
             className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? "bg-dark-900/80 backdrop-blur-md py-4 shadow-lg" : "bg-transparent py-6"
                 }`}
         >
-            <div className="container-custom flex justify-between items-center">
+            <nav className="container-custom flex justify-between items-center">
                 {/* Logo */}
                 {/* Logo */}
                 <motion.div
@@ -82,10 +82,14 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile Menu Button */}
-                <div className="md:hidden text-2xl text-white cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
+                <button
+                    aria-label="Toggle menu"
+                    className="md:hidden text-2xl text-white cursor-pointer focus:outline-none"
+                    onClick={() => setIsOpen(!isOpen)}
+                >
                     {isOpen ? <FaTimes /> : <FaBars />}
-                </div>
-            </div>
+                </button>
+            </nav>
 
             {/* Mobile Menu Dropdown */}
             <AnimatePresence>
@@ -115,7 +119,7 @@ const Navbar = () => {
                     </motion.div>
                 )}
             </AnimatePresence>
-        </nav>
+        </header>
     );
 };
 

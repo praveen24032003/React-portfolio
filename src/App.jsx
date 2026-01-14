@@ -10,11 +10,13 @@ function App() {
   return (
     <div className="bg-dark-900 min-h-screen text-light-100 font-sans selection:bg-primary selection:text-white">
       <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Services />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Services />
+      </main>
       <Contact />
     </div>
   );

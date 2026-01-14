@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { FaPython, FaDatabase } from "react-icons/fa";
 import { SiFlutter } from "react-icons/si";
-import profileImg from "./assets/praveen-passport.jpg";
+import profileImg from "./assets/praveen photo.png";
 import resume from "./assets/Praveen CV Dec-2025.pdf";
 
 // Tech Images
