@@ -15,14 +15,14 @@ const Contact = () => {
 
                     {/* Contact Info */}
                     <div>
-                        <h2 className="text-4xl font-bold mb-6">Let's build something <span className="text-primary">amazing</span> together.</h2>
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6">Let's build something <span className="text-primary">amazing</span> together.</h2>
                         <p className="text-light-300 text-lg mb-8">
                             Have a project in mind? Looking for a reliable freelancer? Drop me a message and let's discuss how I can help your business grow.
                         </p>
 
                         <div className="space-y-4 mb-8">
-                            <a href="mailto:praveenmanickam823@gmail.com" aria-label="Email Me" className="flex items-center space-x-3 text-xl hover:text-primary transition-colors">
-                                <FaEnvelope />
+                            <a href="mailto:praveenmanickam823@gmail.com" aria-label="Email Me" className="flex items-center space-x-3 text-base sm:text-lg md:text-xl hover:text-primary transition-colors break-all sm:break-normal">
+                                <FaEnvelope className="shrink-0" />
                                 <span>praveenmanickam823@gmail.com</span>
                             </a>
                             <button onClick={handleWhatsApp} aria-label="Chat on WhatsApp" className="flex items-center space-x-3 text-xl hover:text-green-500 transition-colors">
@@ -39,7 +39,7 @@ const Contact = () => {
                     </div>
 
                     {/* Simple Form Visual */}
-                    <div className="bg-dark-900 p-8 rounded-2xl border border-white/5">
+                    <div className="bg-dark-900 p-5 sm:p-8 rounded-2xl border border-white/5">
                         <h3 className="text-2xl font-bold mb-6">Send Me a Message</h3>
                         <form className="space-y-4" action="https://formsubmit.co/praveenmanickam823@gmail.com" method="POST">
                             <input type="text" name="name" placeholder="Your Name" className="w-full bg-dark-800 border border-white/10 rounded-lg px-4 py-3 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors" required />

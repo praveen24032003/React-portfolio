@@ -26,16 +26,15 @@ const Navbar = () => {
 
     return (
         <header
-            className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? "bg-dark-900/80 backdrop-blur-md py-4 shadow-lg" : "bg-transparent py-6"
+            className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? "bg-dark-900/80 backdrop-blur-md py-3 md:py-4 shadow-lg" : "bg-transparent py-4 md:py-6"
                 }`}
         >
             <nav className="container-custom flex justify-between items-center">
                 {/* Logo */}
-                {/* Logo */}
                 <motion.div
                     initial="hidden"
                     animate="visible"
-                    className="text-5xl font-bold font-heading tracking-wide text-white cursor-pointer hover:text-primary transition-colors flex"
+                    className="text-2xl sm:text-3xl md:text-5xl font-bold font-heading tracking-wide text-white cursor-pointer hover:text-primary transition-colors flex"
                 >
                     {/* PRAVEEN Animation */}
                     {"PRAVEEN".split("").map((char, index) => (
@@ -50,7 +49,7 @@ const Navbar = () => {
                             {char}
                         </motion.span>
                     ))}
-                    <span className="w-4"></span> {/* Space */}
+                    <span className="w-2 md:w-4"></span> {/* Space */}
 
                     {/* M Animation */}
                     <motion.span
