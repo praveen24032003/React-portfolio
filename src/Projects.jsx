@@ -12,22 +12,25 @@ import agribotImg from "./assets/Agribot_Project.png";
 import aiVoiceImg from "./assets/Pranu_AI-Assistance.png";
 import praveenPortfolioImg from "./assets/praveen portfolio.png";
 import idlyOrderImg from "./assets/idly express website 2.png";
+import clientPortfolioImg from "./assets/Screenshot 2026-02-26 084837.png";
+import vjStudioImg from "./assets/Screenshot 2026-02-26 081919.png";
 
 const Projects = () => {
     const [activeTab, setActiveTab] = useState("all");
     const [selectedProject, setSelectedProject] = useState(null);
 
     const projects = [
+        // --- Live Demo Projects (non-portfolio) ---
         {
             id: 1,
-            title: "Idly Express Sales App",
-            category: "business",
-            image: idlyAppImg,
-            tech: ["Flutter", "Firebase", "Dart"],
-            description: "A comprehensive sales management solution for a food business. Tracks daily/monthly sales, manages wholesale/retail pricing, and calculates real-time profits.",
-            link: "#",
-            git: "https://github.com/praveen24032003/sales-management-app-for-Idly-Express",
-            type: "App"
+            title: "VJ Studio — Photography Platform",
+            category: "client",
+            image: vjStudioImg,
+            tech: ["React 19", "Vite", "Context API", "CSS"],
+            description: "A full-stack-styled, serverless e-commerce web app built for a professional photography studio in Erode, Tamil Nadu — enabling camera rentals, equipment sales, and photoshoot bookings with a smart WhatsApp-based checkout flow. Features multi-service cart system, zero-backend architecture, and mobile-first design for 90%+ mobile users.",
+            link: "https://vj-studio.vercel.app/",
+            git: "#",
+            type: "Web"
         },
         {
             id: 2,
@@ -42,17 +45,29 @@ const Projects = () => {
         },
         {
             id: 3,
-            title: "Dairy Farm Management",
-            category: "client",
-            image: dairyImg,
-            tech: ["Flutter", "Firebase"],
-            description: "Mobile application for managing dairy farm operations, cattle health tracking, and milk production analytics.",
-            link: "#",
+            title: "Idly Express Ordering System",
+            category: "business",
+            image: idlyOrderImg,
+            tech: ["React", "Node.js", "MongoDB"],
+            description: "Online ordering platform for Idly Express enabling customers to browse menu and place orders.",
+            link: "https://idly-express.vercel.app/",
             git: "#",
-            type: "App"
+            type: "Web"
         },
+        // --- Live Demo Projects (portfolios) ---
         {
             id: 4,
+            title: "Client Portfolio Website",
+            category: "client",
+            image: clientPortfolioImg,
+            tech: ["React", "Tailwind CSS"],
+            description: "Designed and developed a mobile-first, fully responsive professional portfolio website for a client. Features clean UI with strong visual hierarchy, reusable components, resume download integration, and direct LinkedIn access — optimized for recruiter scanning and cross-device compatibility.",
+            link: "https://vigneshportfolio-nu.vercel.app/",
+            git: "#",
+            type: "Web"
+        },
+        {
+            id: 5,
             title: "Arun's Portfolio",
             category: "client",
             image: arunImg,
@@ -63,7 +78,7 @@ const Projects = () => {
             type: "Web"
         },
         {
-            id: 5,
+            id: 6,
             title: "Renuka's Portfolio",
             category: "client",
             image: renukaImg,
@@ -74,7 +89,41 @@ const Projects = () => {
             type: "Web"
         },
         {
-            id: 6,
+            id: 7,
+            title: "Praveen Portfolio",
+            category: "business",
+            image: praveenPortfolioImg,
+            tech: ["React", "Tailwind"],
+            description: "My personal portfolio showcasing my skills and projects.",
+            link: "https://praveenportfolio-two.vercel.app/",
+            git: "#",
+            type: "Web"
+        },
+        // --- Projects without Live Demo ---
+        {
+            id: 8,
+            title: "Idly Express Sales App",
+            category: "business",
+            image: idlyAppImg,
+            tech: ["Flutter", "Firebase", "Dart"],
+            description: "A comprehensive sales management solution for a food business. Tracks daily/monthly sales, manages wholesale/retail pricing, and calculates real-time profits.",
+            link: "#",
+            git: "https://github.com/praveen24032003/sales-management-app-for-Idly-Express",
+            type: "App"
+        },
+        {
+            id: 9,
+            title: "Dairy Farm Management",
+            category: "client",
+            image: dairyImg,
+            tech: ["Flutter", "Firebase"],
+            description: "Mobile application for managing dairy farm operations, cattle health tracking, and milk production analytics.",
+            link: "#",
+            git: "#",
+            type: "App"
+        },
+        {
+            id: 10,
             title: "Agribot Project",
             category: "client",
             image: agribotImg,
@@ -85,8 +134,8 @@ const Projects = () => {
             type: "IoT"
         },
         {
-            id: 7,
-            title: "AI Voice assistance",
+            id: 11,
+            title: "AI Voice Assistance",
             category: "client",
             image: aiVoiceImg,
             tech: ["Python", "AI", "NLP"],
@@ -94,28 +143,6 @@ const Projects = () => {
             link: "#",
             git: "https://github.com/praveen24032003/AI-Voice-assistance--Pranu",
             type: "AI"
-        },
-        {
-            id: 8,
-            title: "Praveen Portfolio",
-            category: "business",
-            image: praveenPortfolioImg,
-            tech: ["React", "Tailwind"],
-            description: "My personal portfolio showcasing my skills and projects.",
-            link: "https://praveenportfolio-two.vercel.app/",
-            git: "#",
-            type: "Web"
-        },
-        {
-            id: 9,
-            title: "Idly Express Ordering System",
-            category: "business",
-            image: idlyOrderImg,
-            tech: ["React", "Node.js", "MongoDB"],
-            description: "Online ordering platform for Idly Express enabling customers to browse menu and place orders.",
-            link: "https://idly-express.vercel.app/",
-            git: "#",
-            type: "Web"
         }
     ];
 
